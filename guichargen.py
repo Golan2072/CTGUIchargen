@@ -430,7 +430,7 @@ death = st.toggle("Character Death")
 character = Character(death = death, library_file = "./Data/careers.json", career_name = career_name)
 
 if st.button("Generate"):
-    st.write(f"{character.career} {character.rank_text} {character.name}, {character.sex} {character.species}")
+    st.write(f"{character.career} {character.rank_text} {character.name}, {character.sex} {character.species}; UPP {character.upp_string}")
     st.write(f"Cash Cr{character.cash}; Age {character.age}; {character.terms} Terms")
     st.write(character.skill_string)
     st.write(character.inventory_string)
