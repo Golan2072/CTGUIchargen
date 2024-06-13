@@ -427,7 +427,7 @@ else:
     career_name = career_choice
 death = st.toggle("Character Death")
 
-character = Character(death = death, library_file = "data/careers.json", career_name = career_name)
+character = Character(death = death, library_file = "./data/careers.json", career_name = career_name)
 
 if st.button("Generate"):
     st.write(f"{character.career} {character.rank_text} {character.name}, {character.sex} {character.species}")
